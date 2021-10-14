@@ -1,0 +1,130 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Andada Pro', serif;
+}
+
+.App
+{
+  background-image: url('./Background/wave.svg');
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  height: 100vh;
+}
+
+.Page
+{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form1 , .form2 , .form3 
+{
+  height: 55vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.form1 h1 
+{
+  font-family: 'Ephesis', cursive;
+  font-size: 4rem;
+  padding: 2vh 0 0 0;
+}
+
+label
+{
+  padding-top: 3vh;
+}
+
+
+input[type="text"],input[type="email"],input[type="date"]
+{
+  margin-top:6vh;
+  padding-left: 0.5vh;
+  font-size: 1rem;
+  height: 2rem;
+  width: 35rem;
+  border: none;
+  box-shadow: 2.5px 2.5px 1px 1px;
+}
+
+select
+{
+  margin-top: 3vh;
+  padding-left: 0.5vh;
+  font-size: 2vh;
+  height: 3vh;
+  width: 35rem;
+  border: none;
+  box-shadow: 2.5px 2.5px 1px 1px;
+}
+
+@media (max-width:768px) {
+
+  input[type="text"],input[type="email"],input[type="date"],select
+  {
+    width:15rem;
+  }
+  
+}
+
+
+input[type="text"]:focus,input[type="email"]:focus,select:focus
+{
+  box-shadow: none;
+}
+
+.button
+{
+  width: 8rem;
+  height: 4rem;
+  font-size: 1.3rem;
+  margin-top: 4vh;
+  background-color: #df153d;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+}
+
+.buttons
+{
+  display: flex;
+  justify-content: space-between;
+  width: 25rem;
+}
+
+@media (max-width:768px) {
+
+  .buttons
+  {
+    width: 18rem;
+  }
+
+  .button
+  {
+    width: 6rem;
+  }
+  
+}
+
+.Details
+{
+  font-size: 2vh;
+}
+
+.Details ul li 
+{
+  list-style-type: none;
+  padding: 2vh;
+}
